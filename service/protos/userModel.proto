@@ -1,0 +1,39 @@
+syntax = "proto3";
+package service;
+
+option go_package = "./;protos";
+
+message UserModel{
+  //@inject_tag: json:"id"
+  uint32 ID = 1;
+  //@inject_tag: json:"username"
+  string UserName = 2;
+  //@inject_tag: json:"nickName"
+  string NickName = 3;
+  //@inject_tag: json:"password"
+  string Password = 4;
+  //@inject_tag: json:"intro"
+  string Intro = 5;
+  //@inject_tag: json:"avatar"
+  string Avatar = 6;
+  //@inject_tag: json:"phone"
+  string Phone = 7;
+  //@inject_tag: json:"email"
+  string Email = 8;
+  //@inject_tag: json:"address"
+  string Address = 9;
+  //@inject_tag: json:"isEnable"
+  uint32 IsEnable = 10;
+  //@inject_tag: json:"isAdmin"
+  uint32 IsAdmin = 11;
+  //@inject_tag: json:"limit"
+  uint32 Limit = 12;
+  //@inject_tag: json:"createAt"
+  int64 CreateAt = 13;
+  //@inject_tag: json:"updateAt"
+  int64 UpdateAt = 14;
+  //@inject_tag: json:"deleteAt"
+  int64 DeleteAt = 15;
+
+
+}

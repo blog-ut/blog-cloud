@@ -1,0 +1,12 @@
+server:
+  mode: debug
+  port: 3000
+  version: 1.0
+
+mysql:
+  dsn: root:Pl@1221view@tcp(127.0.0.1:3306)/blog_cloud?charset=utf8mb4&parseTime=True&loc=Local
+
+redis:
+  address: 127.0.0.1:6379
+  password:
+  database: 0
